@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+.contenedorPrincipal{
+    width: 100%;
+    height: calc(100vh - 100px);
+    color: #8C91A1;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1{
+    font-size: 4em;
+    font-weight: 600;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.contenedorFormulario{
+    width: 50%;
+    background-color: #5B6073;
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.contenedorTareas{
+    width: 50%;
+    background-color: #5B6073;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+input{
+    line-height: 30px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn{
+    background-color: #916C16;
+    color: #5B6073;
+    cursor: pointer;
+    padding: 0 20px;
+    border: 1px solid #5B6073;
+    border-radius: 12px;
+    transition: all 0.5;
+    margin-right: 10px;
+}
+
+.btn:hover{
+    background-color: #98814D;
+    transform: scale(1.1);
+}
+
+.btnEditar{
+    background-color: #050E30;
+    color: #5B6073;
+    margin-right: 10px;
+}
+
+.btnEditar:hover{
+    background-color: #192863;
+    transform: scale(1.1);
+}
+
+.btnBorrar{
+    background-color: rgb(160, 14, 14);
+    color: #5B6073;
+}
+
+.btnBorrar:hover{
+    background-color: rgb(108, 9, 9);
+    transform: scale(1.1);
+}
+
+.contenedorInfoTareas{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenedorTarea{
+    width: 80%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    background-color: #3A4467;
+    border-radius: 18px;
+    box-shadow: 17px 22px 23px -12px rgba(0,11,201,0.91);
+}
+
+.todoTarea{
+    margin-right: 50px;
+}
+
+.spanSubrayado{
+    text-decoration: line-through;
 }
